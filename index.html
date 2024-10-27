@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WdPAI lab1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="logic.js" defer></script>
+</head>
+<body>
+
+    <div>
+        <h3>Let's level up your brand, together</h3>
+        <form id="new-member-form">
+            <label for="fname">First name</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+
+            <label for="lname">Last name</label><br>
+            <input type="text" id="lname" name="lname" required><br>
+
+            <label for="role">Role</label><br>
+            <select id="role" name="role">
+                <option value="Manager">Manager</option>
+                <option value="Development-lead">Development Lead</option>
+                <option value="Product-designer">Product Designer</option>
+                <option value="CTO">CTO</option>
+            </select><br>
+
+            <label>
+                <input type="checkbox" id="privacyPolicy" required>
+                You agree to our friendly
+                <a href="https://www.google.com/" target="_blank">privacy policy</a>
+            </label><br>
+
+            <button type="button" onclick="sendPostRequest()">Submit</button>
+        </form>
+    </div>
+
+    <div class="list-members">
+        <ul id="membersList"></ul>
+    </div>
+
+</body>
+</html>
