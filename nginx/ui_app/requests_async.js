@@ -33,3 +33,4 @@ async function sendPostRequest() {
         console.error('Error:', error);
     }
 }
+

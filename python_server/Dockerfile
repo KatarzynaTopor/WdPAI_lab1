@@ -2,7 +2,7 @@
 FROM python:3.9-slim
 
 # Set the working directory inside the container
-WORKDIR /usr/src/app
+WORKDIR C:\Users\kasia\Desktop\WdPAI\lab_1\python_server\server.py
 
 # Copy the Python server script into the container
 COPY server.py .
